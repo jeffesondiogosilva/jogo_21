@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #269826;
+    background-color: #d00101;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 140%;  
@@ -37,7 +37,7 @@ body {
     color: white;
     font-size: 5rem;
     animation: title 2s infinte;
-    background-color: rgb(128, 168, 128);
+    background-color: rgb(199, 128, 114);
     animation-delay: 1s;
     border-radius: 10px;
     margin-top: 1px;
