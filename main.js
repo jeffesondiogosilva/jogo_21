@@ -61,6 +61,9 @@ botao.addEventListener('click', (e) => {
     var c1 = null;
     var c2 = null;
     var c3 = null;
+    var c4 = null;
+    var c5 = null;
+    var c6 = null;
 
     function pegar_carta(){
         console.log('pegou');
@@ -91,6 +94,41 @@ botao.addEventListener('click', (e) => {
             console.log('c3'+carta3.innerHTML);
             c3 = carta3.innerHTML;
             const audio = new Audio('interface-124464.mp3');
+            audio.play();            
+        
+
+        } else if (c3 != null && c4 == null)  {
+
+            const carta4 = document.querySelector('#carta4');
+            carta3.innerHTML = `<p class="mao";>${carta.innerHTML}</p>`
+            console.log('c4'+carta4.innerHTML);
+            c4 = carta4.innerHTML;
+            const audio = new Audio('interface-124464.mp3');
+            audio.play();
+            const song = new Audio('idea-34284.mp3');
+            song.play();
+
+            
+
+        } else if (c4 != null && c5 == null)  {
+
+            const carta5 = document.querySelector('#carta5');
+            carta3.innerHTML = `<p class="mao";>${carta.innerHTML}</p>`
+            console.log('c5'+carta5.innerHTML);
+            c5 = carta5.innerHTML;
+            const audio = new Audio('interface-124464.mp3');
+            audio.play();
+            const song = new Audio('idea-34284.mp3');
+            song.play();
+            
+
+        } else if (c5 != null && c6 == null)  {
+
+            const carta6 = document.querySelector('#carta6');
+            carta3.innerHTML = `<p class="mao";>${carta.innerHTML}</p>`
+            console.log('c6'+carta6.innerHTML);
+            c6 = carta6.innerHTML;
+            const audio = new Audio('interface-124464.mp3');
             audio.play();
             const song = new Audio('idea-34284.mp3');
             song.play();
@@ -98,8 +136,6 @@ botao.addEventListener('click', (e) => {
             const msgm = document.querySelector('#msgm');
             msgm.innerHTML =  '<p id="parabens"> PARABÉNS!!! </p>  <img src="https://img1.picmix.com/output/stamp/normal/5/5/7/8/1098755_1a3d8.gif">'
             window.location.href = '#msgm';
-
-
         }
     }
     
