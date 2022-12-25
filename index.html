@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>King of Cards</title>
+</head>
+<body>
+
+    <div class="container">
+        <div id="wrapper">
+            <button id="music" onclick="tocar_musica()">Música</button> <br>
+            
+        </div>
+        
+        <div id="emb-header">
+            <h1 id="title1">King of Cards</h1>
+            <h3 id="desc">King of Cards é um jogo em que o objetivo é formar uma combinação de 3 cartas que pode ser
+                de uma sequência do mesmo naipe ou a mesma carta com naipes diferentes. Em caso de jogar em grupo, cada participante 
+                deverá parar o dado e o número que aparecer será a quantidade de cartas que o mesmo poderá pedir na rodada.</h3> <br>    
+                <div id="content-dado">
+                    <img id="dado" src="https://4.bp.blogspot.com/-fTbckS3pcCE/VzUTUdqpM7I/AAAAAAAAUmY/WXLhewpgNIUhzqvEf7zrCItUGpif3e4GQCLcB/s1600/Gifs%2Banimados%2BDado%2B8.gif" alt=""> <br>
+                    <button id="btn-dado" >Parar dado</button> <br> 
+                    <p id="res-dado"></p> <br>
+                </div>
+                
+            <img id="icone" src="https://www.imagensanimadas.com/data/media/633/carta-de-baralho-imagem-animada-0051.gif" alt="">  
+        </div> <br>
+        
+        
+
+        <button id="btn-fetch" >Pedir carta</button> <br> <br>
+        <div id="content"></div>  <br> <br>
+                
+        <div id="botao-pegar">
+            <button id="btn-pegar" onclick="pegar_carta()">Pegar carta</button>
+        </div>
+
+        <div id="mao">
+            <div id="carta1" class="cartas"></div>
+            <div id="carta2" class="cartas"></div>
+            <div id="carta3" class="cartas"></div>
+        </div>
+        
+
+        <div id="msgm" class=""></div>
+        
+
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>

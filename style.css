@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2? family= Lato:ital,wght@0,300;0,400;0,900;1,300 & display=swap');
+
+
+body {
+    background-color: #269826;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 140%;  
+    font-family: 'Lato', sans-serif; 
+    
+    
+}
+
+
+#emb-header {
+    margin-top: 1px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#icone{
+    margin-top: 1px;
+    padding-top: 10px;
+}
+
+#wrapper{
+    text-align: right;
+}
+
+#music{
+    font-size: 15px;
+    border-radius: 5px;
+}
+
+#title1{
+    color: white;
+    font-size: 5rem;
+    animation: title 2s infinte;
+    background-color: rgb(128, 168, 128);
+    animation-delay: 1s;
+    border-radius: 10px;
+    margin-top: 1px;
+    animation: title 3s;
+    
+}
+
+@keyframes title {
+    
+    from {font-size: 2rem; }        
+    
+    to {font-size: 5rem; }
+}
+
+#desc{
+    font-size: 0.9rem;
+}
+
+#mao {
+    display: flex;
+    margin: 0;
+    justify-content: center;
+
+}
+
+.mao {
+   
+}
+
+@keyframes carta_surgindo {
+    from {width: 2rem ;}
+    to {width: 12rem;}
+}
+
+#carta{
+    animation: carta_surgindo 2s ;
+    width: 12rem;
+}
+
+#desc{
+    color: white;
+}
+
+.container {
+    text-align: center;
+    
+}
+
+h1{
+    font-size: 40px;
+}
+
+#btn-fetch {
+    font-size: 25px;
+    border-radius: 5px;
+    width: 10rem;
+}
+
+#btn-pegar {
+    font-size: 25px;
+    border-radius: 5px;
+    width: 10rem;
+}
+
+#parabens {
+    font-size: 25px;
+    animation: parabens 2s infinite;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(41, 165, 68);
+    border-radius: 12px;
+    padding: 0px;
+    margin: 0px;
+}
+
+@keyframes parabens {
+    
+    from {
+        color: white;
+        font-size: 1.5rem;
+    }
+
+    to {
+        color: rgb(246, 246, 9);
+        font-size: 3rem;
+    }
+}
+
+button {
+    cursor: pointer;
+}
+
+@keyframes title1r {
+    from {font-size: 1rem; }
+    to {font-size: 3rem}
+}
+
+@keyframes carta_surgindo1 {
+    from {width:2rem}
+    to {width:5rem}
+}
+
+@media (max-width: 768px) {
+    #title1{
+        font-size: 3rem;
+        animation: title1r 4s;
+    }
+
+    #carta{
+        animation: carta_surgindo1 1.8s;
+        width: 5rem;
+    }
+
+    #res-dado{
+        margin-left: 0%;
+        
+    }
+}
+
+#dado{
+    width: 5rem;
+}
+
+#btn-dado{
+    font-size: 17px;    
+    border-radius: 5px;
+}
+
+#res-dado{
+    font-size: 20px;
+    border-radius: 5px;
+    width: 7rem;
+    margin-left: 46.5%;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    background-color: #fff;
+}
+
+#content-dado{
+    justify-content: center;
+    text-align: center;
+    align-items: right;
+}
+
+
+
+
