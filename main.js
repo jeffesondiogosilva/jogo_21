@@ -32,104 +32,87 @@ btn_dado.addEventListener('click', parar_dado);
 const botao = document.querySelector('#btn-fetch');
 const carta = document.querySelector('#content');
 var res = '';
+var contador = 0;
 
 botao.addEventListener('click', (e) => {
-       
+    
+    contador++ ;
     const options = {
         method: 'GET',
         mode: 'cors',
         cache: 'default'
     }
 
-    fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
-    .then(response => {response.json()
-        .then( data => res = `<img id="carta" src="${data.cards[0].image}"> `)
-            
-            
-    })
-    .catch(err => console.log('Deu erro:'+err.message));
+    switch(contador) {
+        case 1:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta1').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+
+        case 2:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta2').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+
+        case 3:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta3').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+
+        case 4:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta4').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+
+        case 5:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta5').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+        case 6:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta6').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));
+
+        break;
+    }
+        
+     
+    
 
     const audio = new Audio('ES_Pen Click In - SFX Producer.mp3');
     audio.play();
     window.location.href = '#btn-fetch';
     
 })
-    var c1 = null;
-    var c2 = null;
-    var c3 = null;
-    var c4 = null;
-    var c5 = null;
-    var c6 = null;
-
-    function pegar_carta(){
-        console.log('pegou');
-        if(c1 == null) {
-            const carta1 = document.querySelector('#carta1');
-            carta1.innerHTML = `<p class="mao">${res}</p>`
-            console.log('c1'+res);
-            c1 = carta1.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();
-            window.location.href = '#carta1'
-
-        } else if (c1 != null && c2 == null)  {
-
-            const carta2 = document.querySelector('#carta2');
-            carta2.innerHTML = `<p class="mao" ;>${res}</p>`
-            console.log('c2'+carta2.innerHTML);
-            c2 = carta2.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();
-            window.location.href = '#carta2';
-
-
-        } else if (c2 != null && c3 == null)  {
-
-            const carta3 = document.querySelector('#carta3');
-            carta3.innerHTML = `<p class="mao";>${res}</p>`
-            console.log('c3'+carta3.innerHTML);
-            c3 = carta3.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();            
-        
-
-        } else if (c3 != null && c4 == null)  {
-
-            const carta4 = document.querySelector('#carta4');
-            carta4.innerHTML = `<p class="mao";>${res}</p>`
-            console.log('c4'+carta4.innerHTML);
-            c4 = carta4.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();
-            const song = new Audio('idea-34284.mp3');
-            song.play();
-
-            
-
-        } else if (c4 != null && c5 == null)  {
-
-            const carta5 = document.querySelector('#carta5');
-            carta3.innerHTML = `<p class="mao";>${res}</p>`
-            console.log('c5'+carta5.innerHTML);
-            c5 = carta5.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();
-            const song = new Audio('idea-34284.mp3');
-            song.play();
-            
-
-        } else if (c5 != null && c6 == null)  {
-
-            const carta6 = document.querySelector('#carta6');
-            carta3.innerHTML = `<p class="mao";>${res}</p>`
-            console.log('c6'+carta6.innerHTML);
-            c6 = carta6.innerHTML;
-            const audio = new Audio('interface-124464.mp3');
-            audio.play();            
-
-            
-        }
-    }
+   
     
 
 
