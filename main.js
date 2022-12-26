@@ -9,14 +9,17 @@ function tocar_musica() {
 
 function parar_dado(){
         
-    const numeros = [1,2,3,4,5,6];
+    const numeros = [];
+    for(var i=0; i < 60; i++){
+        numeros.push(i);
+    }
     const numero = Math.floor(Math.random() * numeros.length + 1);
     
     let res_dado = document.getElementById('res-dado');
     res_dado.innerHTML = numero;
     
 
-    const audio = new Audio('dice.mp3');
+    const audio = new Audio('interface-124464.mp3');
     audio.play();
 
 }
