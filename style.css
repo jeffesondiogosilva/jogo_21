@@ -83,16 +83,14 @@ h1{
     font-size: 40px;
 }
 
-#btn-fetch {
+#btn-fetch, #btn-recomecar {
     font-size: 25px;
     border-radius: 5px;
     width: 10rem;
 }
 
-#btn-pegar {
-    font-size: 25px;
-    border-radius: 5px;
-    width: 10rem;
+#btn-recomecar {
+    background-color: rgb(226, 212, 212);
 }
 
 #parabens {
@@ -176,5 +174,5 @@ button {
 }
 
 
-
+ 
 

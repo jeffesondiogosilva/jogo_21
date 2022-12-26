@@ -132,9 +132,14 @@ function recomecar(){
     carta4.innerHTML = '';
     carta5.innerHTML = '';
     carta6.innerHTML = '';
+
+    const audio = new Audio('pop-39222.mp3');
+    audio.play();
 }
 
-const btn = document.getElementById('recomecar');
+const btn_recom = document.getElementById('btn-recomecar');
+
+btn_recom.addEventListener('click', recomecar)
     
     
 
