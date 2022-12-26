@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: #dd1919;
+    background-color: #be1717;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 140%;  
@@ -24,14 +24,7 @@ body {
     padding-top: 10px;
 }
 
-#wrapper{
-    text-align: right;
-}
 
-#music{
-    font-size: 15px;
-    border-radius: 5px;
-}
 
 #title1{
     color: white;
