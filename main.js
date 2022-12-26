@@ -117,8 +117,24 @@ botao.addEventListener('click', (e) => {
 })
    
     
+function recomecar(){
+    
+    const carta1 = document.getElementById('carta1');
+    const carta2 = document.getElementById('carta2');
+    const carta3 = document.getElementById('carta3');
+    const carta4 = document.getElementById('carta4');
+    const carta5 = document.getElementById('carta5');
+    const carta6 = document.getElementById('carta6');
 
+    carta1.innerHTML = '';
+    carta2.innerHTML = '';
+    carta3.innerHTML = '';
+    carta4.innerHTML = '';
+    carta5.innerHTML = '';
+    carta6.innerHTML = '';
+}
 
+const btn = document.getElementById('recomecar');
     
     
 
