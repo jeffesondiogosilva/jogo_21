@@ -103,9 +103,17 @@ botao.addEventListener('click', (e) => {
         .then( data => document.getElementById('carta6').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
                         
         })
-        .catch(err => console.log('Deu erro:'+err.message));
+        .catch(err => console.log('Deu erro:'+err.message));        
 
-        contador = 0;
+        break;
+
+        case 7:
+            fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
+        .then(response => {response.json()
+        .then( data => document.getElementById('carta7').innerHTML = `<img id="carta" src="${data.cards[0].image}"> `)
+                        
+        })
+        .catch(err => console.log('Deu erro:'+err.message));        
 
         break;
     }
@@ -122,12 +130,14 @@ botao.addEventListener('click', (e) => {
     
 function recomecar(){
     
+    contador = 0;
     const carta1 = document.getElementById('carta1');
     const carta2 = document.getElementById('carta2');
     const carta3 = document.getElementById('carta3');
     const carta4 = document.getElementById('carta4');
     const carta5 = document.getElementById('carta5');
     const carta6 = document.getElementById('carta6');
+    const carta7 = document.getElementById('carta7');
 
     carta1.innerHTML = '';
     carta2.innerHTML = '';
@@ -135,6 +145,7 @@ function recomecar(){
     carta4.innerHTML = '';
     carta5.innerHTML = '';
     carta6.innerHTML = '';
+    carta7.innerHTML = '';
 
     const audio = new Audio('pop-39222.mp3');
     audio.play();
