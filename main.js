@@ -54,7 +54,7 @@ botao.addEventListener('click', (e) => {
                         
         })
         .catch(err => console.log('Deu erro:'+err.message));
-
+        console.log(document.getElementById('carta1'));
         break;
 
         case 2:
@@ -96,6 +96,7 @@ botao.addEventListener('click', (e) => {
         .catch(err => console.log('Deu erro:'+err.message));
 
         break;
+
         case 6:
             fetch(`https://deckofcardsapi.com/api/deck/new/draw/?count=2`, options)
         .then(response => {response.json()
@@ -103,6 +104,8 @@ botao.addEventListener('click', (e) => {
                         
         })
         .catch(err => console.log('Deu erro:'+err.message));
+
+        contador = 0;
 
         break;
     }
