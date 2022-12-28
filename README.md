@@ -2,7 +2,7 @@
 
 
 ### Descrição
-#### Jogo 21 é baseado no famoso jogo de cartas 21 ou Black Jack. O objetivo do game é formar vinte um pontos somando as cartas que forem retiradas
+#### Jogo 21 é baseado no famoso jogo de cartas 21 ou Black Jack. O objetivo do game é formar vinte um pontos somando as cartas que forem retiradas. A ordem dos jogadores é dada de acordo com o número retirado no botão Pegar Número
 
 ### Funcionalidades
 
