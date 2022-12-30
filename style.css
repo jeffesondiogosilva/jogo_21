@@ -132,7 +132,7 @@ button {
 
 @media (max-width: 768px) {
     #title1{
-        font-size: 2rem;
+        font-size: 3rem;
         animation: title1r 4s;
     }
 
