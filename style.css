@@ -142,13 +142,9 @@ button {
     }
 
     #res-dado{
-        margin-left: 5rem;
+        margin-left: 6rem;
         
     }
-}
-
-#dado{
-    width: 5rem;
 }
 
 #btn-dado{
