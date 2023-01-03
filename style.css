@@ -93,15 +93,6 @@ h1{
     background-color: rgb(226, 212, 212);
 }
 
-#parabens {
-    font-size: 25px;
-    animation: parabens 2s infinite;
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(41, 165, 68);
-    border-radius: 12px;
-    padding: 0px;
-    margin: 0px;
-}
 
 
 button {
