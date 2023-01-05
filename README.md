@@ -13,7 +13,7 @@
 - [X] TRABALHAR COM A API <br>
 
 ### Como utilizar
-#### O game é foi produzido para ser usado no navegador, bastando clicar no link do vercel disponível para pode utilizar
+#### O game foi produzido para ser usado no navegador, bastando clicar no link do vercel disponível para pode utilizar
 
 ### Tecnologias
 #### HTML, CSS, JavaScript
